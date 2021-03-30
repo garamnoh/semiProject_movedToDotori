@@ -1,0 +1,9 @@
+div{
+    border:1px solid black;
+    text-align: center;
+}
+
+#menu{
+    width:200px;
+    height:600px;
+}
