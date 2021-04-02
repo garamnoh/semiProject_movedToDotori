@@ -3,15 +3,21 @@ div{
     text-align: center;
 }
 
-#menu{
-    float:right;
-
-    width:200px;
-    height:600px;
+#header{
+    background-color: hotpink;
 }
 
-.clearfix::after {
-    content:"";
-    clear:both;
-    display: table;
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+}
+
+.menu-bar{
+    width:20%;
+}
+
+.contents{
+    width:80%;
 }
