@@ -1,10 +1,16 @@
-div{
-    border:1px solid black;
-    text-align: center;
+.wrap{
+
 }
 
-#header{
+.header{
     background-color: hotpink;
+    text-align:center;
+    font-size:40px;
+    height:60px;
+}
+
+.title{
+
 }
 
 .flex-container{
@@ -12,12 +18,26 @@ div{
     flex-direction:row;
     flex-wrap:nowrap;
     justify-content:space-around;
+    /* margin-bottom:0px; */
 }
 
 .menu-bar{
-    width:20%;
+    width:15%;
+    height:750px;
+    background-color:purple;
+    /* margin-bottom:0px; */
 }
 
 .contents{
-    width:80%;
+    width:85%;
+    height:750px;
+    background-color:blueviolet;
+    /* margin-bottom:0px; */
+}
+
+.footer{
+    background-color:crimson;
+    height:60px;
+    text-align:center;
+    align-items:center;
 }
