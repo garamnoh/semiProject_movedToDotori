@@ -26,7 +26,7 @@
 .menu{
     border:1px solid deeppink;
     background-color:pink;
-    width:auto;
+    width:10%;
     height:750px;
     
 }
@@ -34,7 +34,7 @@
 .contents{
     border:1px solid deeppink;
     background-color:pink;
-    width:85%;
+    width:90%;
     height:750px;
 }
 
@@ -54,19 +54,13 @@ a{
     color:inherit;
 }
 
-.menu>ul{
-    /* border:1px solid black; */
-    padding-top:50px;
-    padding-right:40px;
+.menu.flex-container{
+    flex-direction:column;
 }
 
-.menu>ul>li{
-    display:block;
-    margin:10px;
-    font-family:"Single Day";
-    font-size:40px;
-    font-weight:bold;
-    background-color:hotpink;
+.menu.flex-container>div{
+    font-size:30px;
     border:5px solid deeppink;
     text-align:center;
+    vertical-align:center;
 }
