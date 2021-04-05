@@ -26,7 +26,7 @@
 .menu{
     border:1px solid deeppink;
     background-color:pink;
-    width:15%;
+    width:auto;
     height:750px;
     
 }
@@ -44,11 +44,20 @@
     height:auto;
     text-align:center;
     vertical-align:center;
+    font-size:30px;
+    font-family:"Single Day";
+    font-weight:bold;
 }
 
 a{
     text-decoration:none;
     color:inherit;
+}
+
+.menu>ul{
+    /* border:1px solid black; */
+    padding-top:50px;
+    padding-right:40px;
 }
 
 .menu>ul>li{
@@ -58,6 +67,6 @@ a{
     font-size:40px;
     font-weight:bold;
     background-color:hotpink;
-    border:2px solid deeppink;
+    border:5px solid deeppink;
     text-align:center;
 }
