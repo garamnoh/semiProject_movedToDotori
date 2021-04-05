@@ -50,3 +50,14 @@ a{
     text-decoration:none;
     color:inherit;
 }
+
+.menu>ul>li{
+    display:block;
+    margin:10px;
+    font-family:"Single Day";
+    font-size:40px;
+    font-weight:bold;
+    background-color:hotpink;
+    border:2px solid deeppink;
+    text-align:center;
+}
