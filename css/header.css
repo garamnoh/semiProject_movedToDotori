@@ -1,0 +1,216 @@
+*{
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    border-bottom: 1px #eee solid;
+    box-shadow: 1px 1px 2px #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+header>nav>ul{
+    display: flex;
+    margin: 20px 0 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icon{
+    margin-right: 0;
+}
+
+a:visited{
+    color: black;
+}
+
+.header,
+#icon{
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.homepage{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.home{
+    margin-left: auto;
+}
+
+.home,
+.pages,
+.portfolio,
+.login{
+    text-decoration: none;
+    transition: opacity 1s;
+}
+
+.home:hover,
+.pages:hover,
+.portfolio:hover,
+.login:hover,
+#icon:hover{
+    opacity: 0.3;
+    cursor: default;
+}
+
+.home:active,
+.pages:active,
+.portfolio:active,
+.login:active,
+#icon:active{
+    opacity: 1;
+}
+
+
+
+@media (max-width: 800px){
+
+    header{
+        border-bottom: 1px #eee solid;
+        box-shadow: 1px 1px 2px #eee;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+    }
+    
+    header>nav>ul{
+        display: flex;
+        margin: 20px 0 20px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo{
+        margin-right: 0;
+    }
+    
+    a:visited{
+        color: black;
+    }
+    
+    .header{
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 30px;
+    }
+    
+    .homepage{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    .home{
+        margin-left: auto;
+    }
+    
+    .home,
+    .pages,
+    .portfolio,
+    .login{
+        text-decoration: none;
+        opacity: 0;
+    }
+    
+    .home:hover,
+    .pages:hover,
+    .portfolio:hover,
+    .login:hover,
+    .logo:hover{
+        opacity: 0.5;
+        cursor: default;
+    }
+    
+    .home:active,
+    .pages:active,
+    .portfolio:active,
+    .login:active,
+    .logo:active{
+        opacity: 1;
+    }
+
+}
+
+@media (max-width: 790px){
+
+    header{
+        border-bottom: 1px #eee solid;
+        box-shadow: 1px 1px 2px #eee;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+    }
+    
+    header>nav>ul{
+        display: flex;
+        margin: 20px 0 20px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo{
+        margin-right: 0;
+    }
+    
+    a:visited{
+        color: black;
+    }
+    
+    .header{
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 30px;
+    }
+    
+    .homepage{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    .home{
+        margin-left: auto;
+    }
+    
+    .home,
+    .pages,
+    .portfolio,
+    .login{
+        text-decoration: none;
+        display: none;
+    }
+    
+    .home:hover,
+    .pages:hover,
+    .portfolio:hover,
+    .login:hover,
+    .logo:hover{
+        opacity: 0.5;
+        cursor: default;
+    }
+    
+    .home:active,
+    .pages:active,
+    .portfolio:active,
+    .login:active,
+    .logo:active{
+        opacity: 1;
+    }   
+
+}
+
