@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <title>login</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="header homepage">GARAM NOH</li>
+                <a class="header home" href="homepage.html">HOME</a>
+                <a class="header pages" href="">PAGES</a>
+                <a class="header portfolio" href="">PORTFOLIO</a>
+                <a class="header login" href="login.html">LOGIN</a>
+                <div id="toggler" onclick="toggle()">
+                    <img id="icon" class="" src="img/apps.svg" alt="">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="sidebar" class="">
+        <div id="toggler2" onclick="toggle()">
+            <img src="img/close_black.svg" alt="">
+        </div>
+        <div class="menus">
+            <a class="menu" href="homepage.html">HOME</a>
+            <a class="menu" href="">PAGES</a>
+            <a class="menu" href="">PORTFOLIO</a>
+            <a class="menu" href="login.html">LOGIN</a>
+        </div>
+    </div>
+
+    <section>
+        <div class="section">
+            <div class="account">
+                <p>Sign in to GARAM NOH</p>
+                <div class="button_google">
+                    <p>
+                        G Sign in with Google
+                    </p>   
+                </div>
+                <div class="or">
+                    <div class="line"></div>
+                    <p>or</p>
+                </div>
+                <div class="input_id">
+                    <p>Username or Email Address</p>
+                    <input type="text" name="userId">
+                </div>
+                <div class="input_password">
+                    <div class="text_password">
+                        <p>Password</p>
+                        <a href="">Forgot password?</a>
+                    </div>
+                    <input type="password" name="password">
+                </div>
+                <div class="button_signin">
+                    <p>
+                        Sign In
+                    </p>   
+                </div>
+                <div class="signup">
+                    <p>Not a member? &nbsp;</p>
+                    <a href="">Sign up now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>
