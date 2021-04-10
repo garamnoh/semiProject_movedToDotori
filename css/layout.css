@@ -27,10 +27,6 @@ body{
     height: 100vh;
     top: 200vh;
 }
-/* .pages{
-    top: -100vh;
-    transition: 1s;
-} */
 .fix1{
     position: fixed;
     top: 20px;

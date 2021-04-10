@@ -12,7 +12,7 @@ section{
 .account{
     margin-top: 200px;
     width: auto;
-    height: auto;
+    height: auto; 
     justify-content: center;
     display: flex;
     flex-direction: column;

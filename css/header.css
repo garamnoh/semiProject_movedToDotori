@@ -52,6 +52,7 @@ a:visited{
 .home,
 .pages,
 .portfolio,
+.guestbook,
 .login{
     text-decoration: none;
     transition: opacity 1s;
@@ -60,6 +61,7 @@ a:visited{
 .home:hover,
 .pages:hover,
 .portfolio:hover,
+.guestbook:hover,
 .login:hover,
 #icon:hover{
     opacity: 0.3;
@@ -69,6 +71,7 @@ a:visited{
 .home:active,
 .pages:active,
 .portfolio:active,
+.guestbook:active,
 .login:active,
 #icon:active{
     opacity: 1;

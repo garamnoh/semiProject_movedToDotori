@@ -1,5 +1,10 @@
 /* 방명록입니다 */
 
+#guestbook_article{
+    display: flex;
+    padding: 94px 30px 30px 30px;
+}
+
 #guestbook{
     width:180px;
     height: 300px;
