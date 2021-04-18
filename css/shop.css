@@ -1,0 +1,13 @@
+/* shop */
+
+*{
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 94px 30px 30px 30px;
+}

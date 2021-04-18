@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <title>homepage</title>
 </head>
 <body>
@@ -19,10 +20,13 @@
     <header>
         <nav>
             <ul>
-                <li class="header homepage">GARAM NOH</li>
+                <li class="header homepage">
+                    DOTORI WORLD
+                    <img src="../resources/img/dotori.png" alt="" class="icon">
+                </li>
                 <a class="header home" href="homepage.html">HOME</a>
-                <a class="header pages" href="">PAGES</a>
-                <a class="header portfolio" href="">PORTFOLIO</a>
+                <a class="header music" href="music.html">MUSIC</a>
+                <a class="header shop" href="shop.html">SHOP</a>
                 <a class="header guestbook" href="guestbook.html">GUESTBOOK</a>
                 <a class="header login" href="login.html">LOGIN</a>
                 <div id="toggler" onclick="toggle()">
@@ -30,6 +34,14 @@
                 </div>
             </ul>
         </nav>
+        <!-- 도토리 클릭했을 때 새창 나오는 부분 js -->
+        <script>
+            const dotori = document.querySelector('header .icon');
+            
+            dotori.addEventListener('click', ()=>{
+                open('dotoriworld.html');
+            });
+        </script>
     </header>
 
     <!-- 숨어있는 메뉴 -->
@@ -39,8 +51,8 @@
         </div>
         <div class="menus">
             <a class="menu" href="homepage.html">HOME</a>
-            <a class="menu" href="">PAGES</a>
-            <a class="menu" href="">PORTFOLIO</a>
+            <a class="menu" href="music.html">MUSIC</a>
+            <a class="menu" href="shop.html">SHOP</a>
             <a class="menu" href="guestbook.html">GUESTBOOK</a>
             <a class="menu" href="login.html">LOGIN</a>
         </div>
@@ -59,7 +71,54 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+
+    <!-- 하단 -->
+    <footer>
+        <div class="footerContainer">
+            <div class="footer">
+                <!-- 왼쪽 홈페이지 설명부분 -->
+                <div class="box_text">
+                    <h2><span>JAVA</span><span>JAVA</span></h2>
+                    <p>
+                        text text text text text text <br>
+                        text text text text text text <br>
+                        text text text text text text <br>
+                        text text text text text text <br>
+                        text text text text text text <br>
+                    </p>
+                    <!-- 전화번호 -->
+                    <div id="call">
+                        <img src="../resources/img/phone_white.svg" alt="">
+                        <span id="callNumber">123-456-7890</span>
+                    </div>
+                    <!-- email -->
+                    <div id="email">
+                        <img src="../resources/img/mail_white.svg" alt="">
+                        <span id="emailAddress">info@javajava.com</span>
+                    </div>
+                    <!-- 깃허브와 페이스북 아이콘(아직 링크 X) -->
+                    <div id="social">
+                        <img src="../resources/img/facebook_white.svg" alt="">
+                        <img src="../resources/img/git_white.png" alt="">
+                    </div>
+                </div>
+                <!-- contact us / 바로 메일 보낼수 있는 texrarea -->
+                <div class="box_contact">
+                    <h4>Contact Us</h4>
+                    <textarea name="" id="eamil" cols="100" rows="1" placeholder="Your email address"></textarea>
+                    <textarea name="" id="content" cols="100" rows="8" placeholder="Message"></textarea>
+                    <button id="sendBtn">Send</button>
+                </div>
+            </div>
+            <div id="line">
+                <hr>
+            </div>
+            <!-- 자바를 자바라 -->
+            <div class="designed">
+                <h4>Coding | Designed by <span>JAVA</span><span>JAVA</span></h4>
+            </div>
+        </div>
+    </footer>
     <!-- js파일 -->
     <script src="../js/sidebar.js"></script>
 </body>
