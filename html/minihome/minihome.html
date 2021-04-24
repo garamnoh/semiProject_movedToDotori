@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>minihome</title>
+    <link rel="icon" href="dotori.ico">
+    <style>
+        .container{
+            box-sizing:border-box;
+            background-image:url("backgroundImg(3).png");
+            border:3px solid pink;
+            width:975px;
+            height:725px;
+            /* width:100%; */
+            /* height:100%; */
+            margin:50px auto;
+        }
+        .cover{
+            position:relative;
+            background-color:lightsteelblue;
+            margin-top:10px;
+            margin-left:10px;
+            box-sizing:border-box;
+            width:900px;
+            height:700px;
+            padding:25px 25px;
+            border-radius:20px;
+            /* border:1px solid black; */
+        }
+        .sheet{
+            background-color:white;
+            box-sizing:border-box;
+            width:850px;
+            height:650px;
+            border-radius:20px;
+            /* border:1px solid black; */
+        }
+        .today{
+            /* border:1px solid black; */
+            box-sizing:border-box;
+            width:200px;
+            height:25px;
+            float:left;
+            font-size:15px;
+            margin-left:30px;
+            margin-top:15px;
+            text-align:center;
+            
+        }
+        .miniTitle{
+            /* border:1px solid black; */
+            box-sizing:border-box;
+            width:400px;
+            height:30px;
+            float:left;
+            font-size:20px;
+            margin-left:70px;
+            margin-top:10px;
+            color:cornflowerblue;
+            font-weight:bold;
+        }
+        .left-page{
+            box-sizing:border-box;
+            float:left;
+            clear:left;
+            margin-left:5px;
+            margin-top:5px;
+            /* border:1px solid black; */
+            border-radius:20px;
+            box-sizing:border-box;
+            width:250px;
+            height:600px;
+            background-color:lightgrey;
+        }
+        .right-page{
+            box-sizing:border-box;
+            float:left;
+            margin-left:5px;
+            margin-top:5px;
+            /* border:1px solid black; */
+            border-radius:20px;
+            box-sizing:border-box;
+            width:585px;
+            height:600px;
+            background-color:lightgrey;
+        }
+        #today{
+            color:red;
+        }
+        .miniMenu{
+            position:relative;
+            left:845px;
+            bottom:600px;
+        }
+        .miniMenu li{
+            background-color:skyblue;
+            color:white;
+            font-weight:bold;
+            box-sizing:border-box;
+            /* border:1px solid black; */
+            margin-bottom:10px;
+            list-style-type:none;
+            width:80px;
+            height:35px;
+            text-align:center;
+            padding-top:5px;
+            border-top-right-radius:5px;
+            border-bottom-right-radius:5px;
+        }
+        .miniMenu li:first-of-type{
+            background-color:powderblue;
+        }
+        .miniMenu li:hover{
+            background-color:steelblue;
+            cursor:pointer;
+        }
+        .left-page-frame{
+            width:225px;
+            height:575px;
+            margin-top:10px;
+            margin-left:10px;
+            border:none;
+        }
+        .right-page-frame{
+            width:560px;
+            height:575px;
+            margin-top:10px;
+            margin-left:10px;
+            border:none;
+        }
+    </style>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="cover">
+            <div class="sheet">
+                <div class="today">TODAY <span id="today">121</span> | TOTAL <span id="total">123904</span></div>
+                <div class="miniTitle">곰돌이 푸의 미니홈피</div>
+                <div class="left-page"><iframe src="leftpage_home.html" class="left-page-frame"></iframe></div>
+                <div class="right-page"><iframe src="rightpage_home.html" class="right-page-frame"></iframe></div>
+            </div>
+        </div>
+        <nav class="miniMenu">
+            <ul>
+                <li>홈</li>
+                <li>다이어리</li>
+                <li>쥬크박스</li>
+                <li>사진첩</li>
+                <li>방명록</li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $("nav.miniMenu li").on("click",(e)=>{
+            let menu=$(e.target).html();
+            let frameChange=(leftpageUrl,rightpageUrl)=>{
+                $("iframe.left-page-frame").attr("src",leftpageUrl);
+                $("iframe.right-page-frame").attr("src",rightpageUrl);
+            }
+            switch(menu){
+                case "홈":frameChange("leftpage_home.html","rightpage_home.html");break;
+                case "다이어리":frameChange("leftpage_diary.html","rightpage_diary.html");break;
+                case "쥬크박스":frameChange("leftpage_jukebox.html","rightpage_jukebox.html");break;
+                case "사진첩":frameChange("leftpage_album.html","rightpage_album.html");break;
+                case "방명록":frameChange("leftpage_board.html","rightpage_board.html");
+            }
+            $(e.target).parent().children().css("background-color","skyblue");
+            $(e.target).css("background-color","powderblue");
+            $(e.target).parent().children().hover((i)=>{
+                $(i.target).css("background-color","steelblue");
+            },(i)=>{
+                if(e.target==i.target){
+                    $(i.target).css("background-color","powderblue");
+                }else{
+                    $(i.target).css("background-color","skyblue");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
