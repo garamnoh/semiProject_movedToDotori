@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>DOTORI</title>
+    <!-- 외부 스타일시트 -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap">
 </head>
 <body>
     <div class="main">
+        <!-- 상단 메뉴 -->
         <div class="bar">
+            <!-- 로고 -->
             <img src="../resources/img/logo_main.png" alt="">
+            <!-- 홈 아이콘 -->
             <img src="../resources/img/home_b.png" alt="" id='homeBtn' class='btn'>
+            <!-- 친구 관리 아이콘 -->
             <img src="../resources/img/group_b.png" alt="" id='groupBtn' class='btn focused'>
+            <!-- 쇼핑 아이콘 -->
             <img src="../resources/img/shop_b.png" alt="" id='shopBtn' class='btn focused'>
-            <img src="../resources/img/mini_u.png" alt="" id='miniBtn' class='btn focused'>
-            <img src="../resources/img/mini_l.png" alt="">
+            <!-- 미니홈피 아이콘 -->
+            <img src="../resources/img/mini.png" alt="" id='miniBtn' class='btn focused'>
+            
+            <img src="../resources/img/mini_u.png" alt="">
             <img src="../resources/img/mini_home_1.png" alt="">
             <img src="../resources/img/mini_home_2.png" alt="">
             <img src="../resources/img/mini_home_3.png" alt="">
             <img src="../resources/img/logo_main.png" alt="">
         </div>
         <div class="mainContainer">
+            <!-- 좌측 메뉴 -->
             <div class="sidemenu flex">
                 <iframe src="sidebarHome.html" frameborder="0">
                 </iframe>
             </div>
+            <!-- 컨텐츠 -->
             <div class="contents">
-
+                <iframe src="shopping.html"></iframe>
             </div>
         </div>
     </div>
+    <!-- 외부 js파일 -->
     <script src='../js/jquery-3.6.0.min.js'></script>
     <script src='../js/main.js'></script>
 </body>
