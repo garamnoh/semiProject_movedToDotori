@@ -20,6 +20,7 @@ body{
     display: flex;
     justify-content: space-between;
     border-bottom: rgb(190, 190, 190) 1px solid;
+    position: relative;
 }
 
 .bar>img{
@@ -62,6 +63,17 @@ body{
 .bar>img:nth-child(8):active,
 .bar>img:nth-child(9):active{
     opacity: 1  ;
+}
+
+.bar>iframe{
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: 15px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    opacity: 0.3;
 }
 
 .bar>img:last-child{
