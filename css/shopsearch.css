@@ -1,0 +1,16 @@
+
+img{
+    background-color: rgb(190, 190, 190);
+    height: 27px;
+    width: 27px;
+    position: relative;
+    /* margin-top:20px ; */
+    top: 10px;
+    left: 5px;
+}
+#searchTap{
+    width: 150px;
+    height: 19px;
+    border: rgb(190, 190, 190);
+}
+
