@@ -1,0 +1,29 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Noto Sans KR';
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 300px;
+}
+
+.container>div{
+    width: 880px;
+    height: 1000px;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+}
+
+.container>div>p{   
+    font-size: 20px;   
+    color: white;
+}
