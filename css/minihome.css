@@ -115,6 +115,7 @@
     margin-top:10px;
     margin-left:10px;
     border:none;
+    /* border:1px solid black; */
 }
 .right-page-frame{
     width:560px;
@@ -122,4 +123,5 @@
     margin-top:10px;
     margin-left:10px;
     border:none;
+    /* border:1px solid black; */
 }
