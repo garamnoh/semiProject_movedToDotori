@@ -2,6 +2,10 @@ body{
     font-family: 'Roboto', 'Noto Sans KR';
 }
 
+*::-webkit-scrollbar{
+    display: none;
+}
+
 body>.profile{
     height: 280px;
     width: 280px;
