@@ -10,6 +10,7 @@ let shopBtn = document.getElementById('shopBtn');
 let miniBtn = document.getElementById('miniBtn');
 
 let sidemenu = document.querySelector('body>.main>.mainContainer>.sidemenu');
+let contents = document.querySelector('body>.main>.mainContainer>.contents');
 
 /////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
@@ -22,16 +23,12 @@ homeBtn.addEventListener('click', (e)=>{
     $('.bar>img').not(e.target).not($(logo)).addClass('focused');
     (e.target).classList.remove('focused');
 
+    // 사이드메뉴
     sidemenu.classList.remove('hide');
-    // 사이드바에 있는 아이프레임 삭제
-    let removeIframe = document.querySelector('body>.main>.mainContainer>.sidemenu>iframe');
-    sidemenu.removeChild(removeIframe);
-    // 버튼에 따른 아이프레임 메뉴 생성
-    let iframe = document.createElement('iframe');
-    iframe.setAttribute('src', 'sidebarHome.html');
-    sidemenu.appendChild(iframe);
+    $('.sidemenu>iframe').attr('src', 'sidebarHome.html');
     
-    $(".contents>iframe").attr("src","");
+    // 컨텐츠
+    $(".contents>iframe").attr("src","contentHome.html");
 });
 
 // 그룹버튼 클릭이벤트
@@ -40,16 +37,12 @@ groupBtn.addEventListener('click', (e)=>{
     $('.bar>img').not(e.target).not($(logo)).addClass('focused');
     (e.target).classList.remove('focused');
 
+    // 사이드메뉴
     sidemenu.classList.remove('hide');
-    // 사이드바에 있는 아이프레임 삭제
-    let removeIframe = document.querySelector('body>.main>.mainContainer>.sidemenu>iframe');
-    sidemenu.removeChild(removeIframe);
-    // 버튼에 따른 아이프레임 메뉴 생성
-    let iframe = document.createElement('iframe');
-    iframe.setAttribute('src', 'sidebarGroup.html');
-    sidemenu.appendChild(iframe);
-
-    $(".contents>iframe").attr("src","");
+    $('.sidemenu>iframe').attr('src', 'sidebarGroup.html');
+    
+    // 컨텐츠
+    $(".contents>iframe").attr("src","contentGroup.html");
 });
 
 // 쇼핑버튼 클릭이벤트
@@ -58,16 +51,12 @@ shopBtn.addEventListener('click', (e)=>{
     $('.bar>img').not(e.target).not($(logo)).addClass('focused');
     (e.target).classList.remove('focused');
 
+    // 사이드메뉴
     sidemenu.classList.remove('hide');
-    // 사이드바에 있는 아이프레임 삭제
-    let removeIframe = document.querySelector('body>.main>.mainContainer>.sidemenu>iframe');
-    sidemenu.removeChild(removeIframe);
-    // 버튼에 따른 아이프레임 메뉴 생성
-    let iframe = document.createElement('iframe');
-    iframe.setAttribute('src', 'sidebarShop.html');
-    sidemenu.appendChild(iframe);
-
-    $(".contents>iframe").attr("src","");
+    $('.sidemenu>iframe').attr('src', 'sidebarShop.html');
+    
+    // 컨텐츠
+    $(".contents>iframe").attr("src","contentShop.html");
 });
 
 // 미니홈피버튼 클릭이벤트
@@ -78,6 +67,5 @@ miniBtn.addEventListener('click', (e)=>{
     // 사이드바 숨기기(display:none)
     sidemenu.classList.add('hide');
 
-    $(".contents>iframe").attr("src","minihome/minihome.html");
-    
+    $(".contents>iframe").attr("src","minihome/minihome.html");   
 });
