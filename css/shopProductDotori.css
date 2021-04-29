@@ -17,10 +17,11 @@ div.productDotori{
     margin-bottom: 30px;
 }
 /* 체크박스들크기조정 */
-div.productDotori>br+.shopDotoriCheck{
+div.productDotori>.shopDotoriCheck{
     width: 20px;
     height: 20px;
     position: relative;
+    top: 3px;
     left: 20px;
     border: solid 1px black;
 }

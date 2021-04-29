@@ -1,0 +1,45 @@
+div.productMusic>img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    /* left: 10px; */
+
+}
+/* 도토리 액수 */
+div.productMusic>p{
+    position: relative;
+    left: 30px;
+}
+/* 전체움직임*/
+div.productMusic{
+    display: inline-block;
+    margin-left: 90px;
+    margin-bottom: 30px;
+} 
+/* 전체움직임 */
+/* div.productMusic{
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+} */
+/* 체크박스들크기조정 */
+div.productMusic>br+.shopMusicCheck{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    /* left: 5px; */
+    border: solid 1px black;
+}
+
+/* 음반제목 */
+div.productMusic>.MusicTitle{
+    position: relative;
+    /* left: 10px; */
+}
+/* 음반제목길때 어쩔수 없이 아래로 쓸때 */
+div.productMusic>.MusicTitle2{
+    position: relative;
+    left: 35px;
+}
