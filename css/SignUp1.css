@@ -1,0 +1,54 @@
+#cancle{
+    position: relative;
+ margin: 100px;
+ left: 100px;
+ bottom: 50px;
+ 
+}
+#okay{
+    position: relative;
+ margin: 100px;
+ left: 100px;
+ bottom: 50px;
+ background-color:lightgreen;
+
+
+}
+#phone{
+ width: 10%;
+}
+#no1{
+  width: 13%;
+}
+
+
+#birthday{
+ position: relative;
+ right: 16px;
+ padding: 15px;
+}
+.join{
+ 
+ font-size: 15px;
+ margin: 30px;
+ padding: 10px;
+ border: 1px lightsalmon solid;
+ height: 400px;
+ position: relative;
+ top :30px;
+}
+#pwd{
+ position: relative;
+ right: 16px;
+ margin: 15px;
+}
+#name{
+ position: relative;
+ right: 16px;
+ margin: 15px;
+}
+#pwd2{
+ position: relative;
+ right: 16px;
+ margin: 15px;
+}

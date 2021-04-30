@@ -1,0 +1,114 @@
+.center1{
+          
+    position: relative;
+   width: 100%;
+   height: 50%;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+img{
+    width: 200;
+    height: 100px;
+    position: absolute;
+    left: -270%;
+}
+ html, body
+    {
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+    } 
+
+
+#new{
+    width: 98%;
+    height: 15%;
+    position:relative;
+    bottom: -10%;
+}
+
+hr{
+    position:relative;
+    bottom: -7%;
+}
+
+/*아이디 비밀번호찾기*/
+p{
+    position:relative;
+    bottom: -10%;
+    text-align: center;
+    font-size: 12px;
+  
+}
+
+
+/* 로그인버튼 */
+#login{ 
+    width: 98%;
+    height: 35px;
+    background-color: coral;
+    border-radius: 3%;
+    color: white;
+    position:relative;
+    bottom: -10%;           
+}
+
+/*앞에 아이디*/
+#userId{
+    width: 35%;
+    height: 30px;
+    position:relative;
+    bottom: -2%;
+    top: 20px;
+}
+/*뒤에 이메일*/
+#email2{
+    width: 45%;
+    height: 30px;
+    position:relative;
+    bottom: -2%;
+    top: 20px;
+}
+
+/*이메일 선택*/
+#selectEmail{
+   margin: 10px;
+    left :112px;
+    top: 18px;
+    position:relative;
+}
+/*패스워드*/
+#password{
+    width: 95%;
+    height: 30px;
+    position:relative;
+    bottom: -5%;
+}
+
+#title{
+   
+    position: absolute;
+ 
+    background-color: white;
+    box-shadow: 2px 1px 0px 0px gray;
+    top: 50%;
+    left: 50%;
+    border-radius:3% ;
+
+    border: gray 1px solid;
+    border-left:none;
+    border-right: none;
+    border-top: none;
+    height: 280px;
+    width: 250px;
+    margin: 110px  125px;
+ 
+}
+/*골뱅이*/
+#gol{
+    position: relative;
+    top: 20px;
+}
