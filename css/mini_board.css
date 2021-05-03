@@ -1,8 +1,14 @@
 /*********right_board**********/
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
 #geust_box{
     height:180px;
     width:520px;
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-left:5px;
     background-color: white;
     border: 1px solid;
 }
@@ -61,3 +67,53 @@
     width:425px;
     margin-left:20px;
 }
+
+
+/**********right_diary***********/
+#diary_title{
+    display:inline-block;
+    height:55px;
+    width:520px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_title_date{
+    display:inline-block;
+    height:55px;
+    width:80px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_content{
+    display:inline-block;
+    height:500px;
+    width:520px;
+    border:1px solid;
+}
+#diary_date{
+    display:inline-block;
+    height:30px;
+    width:520px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_inner{
+    display:inline-block;
+    height:400px;
+    width:520px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_reply{
+    display:inline-block;
+    text-align: center;
+    height:30px;
+    width:520px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_input{
+    width:300px;
+}
+
+
