@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- ì¸ë¶ ì¤íì¼ ìí¸ -->
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/mini_board.css">
 </head>
 <body>
@@ -16,8 +15,8 @@
             <div id="diary_date"></div>
             <div id="diary_inner"></div>
             <div id="diary_reply">
-                ëê¸<input type="text" id="diary_input">
-                <button>íì¸</button>
+                댓글<input type="text" id="diary_input">
+                <button>확인</button>
             </div>
         </div>
 

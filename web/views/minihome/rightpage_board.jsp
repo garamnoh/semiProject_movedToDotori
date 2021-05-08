@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- ì¸ë¶ ì¤íì¼ ìí¸ -->
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/mini_board.css">
 </head>
 <body>
@@ -21,7 +20,7 @@
                 <span id="guest_reply"></span>
             </div>   
             <input type="text" id="reply">     
-            <button>íì¸</button>
+            <button>확인</button>
         </div>
         <div id="geust_box">
             <div id="guest_info">
@@ -35,7 +34,7 @@
                 <span id="guest_reply"></span>
             </div>   
             <input type="text" id="reply">     
-            <button>íì¸</button>
+            <button>확인</button>
         </div>
         <div id="geust_box">
             <div id="guest_info">
@@ -49,7 +48,7 @@
                 <span id="guest_reply"></span>
             </div>   
             <input type="text" id="reply">     
-            <button>íì¸</button>
+            <button>확인</button>
         </div>
         <div id="geust_box">
             <div id="guest_info">
@@ -63,7 +62,7 @@
                 <span id="guest_reply"></span>
             </div>   
             <input type="text" id="reply">     
-            <button>íì¸</button>
+            <button>확인</button>
         </div>
     </div>
 

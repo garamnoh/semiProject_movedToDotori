@@ -15,21 +15,21 @@
 <body>
     <div class="menuOption">
         <div id="optionTitle">SHOP</div>
-        <div class='menuTitle' id="option1">ëí ë¦¬</div>
+        <div class='menuTitle' id="option1">도토리</div>
         <div class="menuSub">
-            <p id='charge'>ì¶©ì íê¸°</p>
-            <p id='gift'>ì ë¬¼íê¸°</p>
+            <p id='charge'>충전하기</p>
+            <p id='gift'>선물하기</p>
         </div>
-        <div class='menuTitle' id="option2">ìì´í</div>
+        <div class='menuTitle' id="option2">아이템</div>
         <div class="menuSub">
-            <p id='minime'>ë¯¸ëë¯¸</p>
-            <p id='skin'>ì¤í¨</p>
-            <p id='music'>ìì</p>
+            <p id='minime'>미니미</p>
+            <p id='skin'>스킨</p>
+            <p id='music'>음악</p>
         </div>
-        <div class='menuTitle' id="option3">ì¥ë°êµ¬ë</div>
+        <div class='menuTitle' id="option3">장바구니</div>
         <div class="menuSub">
-            <p id='buy'>ì¬ê¸°</p>
-            <p id='gift'>ì ë¬¼íê¸°</p>
+            <p id='buy'>사기</p>
+            <p id='gift'>선물하기</p>
         </div>
     </div>
     <script src='<%=request.getContextPath()%>/js/jquery-3.6.0.min.js'></script>

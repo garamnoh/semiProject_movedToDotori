@@ -24,11 +24,11 @@
     <p class="music-title">MUSIC</p>
     <nav class="albums">
         <ul>
-            <li>ì°ì¸í  ë ë£ë ìì</li>
-            <li>ì ëë ìì</li>
-            <li>íí©/li>
-            <li>ë´ ê¸°ë¶ ë´ì</li>
-            <li>ê¸°ë³¸ ì¨ë²</li>
+            <li>우울할 때 듣는 음악</li>
+            <li>신나는 음악</li>
+            <li>힙합</li>
+            <li>봄 기분 내자</li>
+            <li>기본 앨범</li>
         </ul>
     </nav>
 </body>

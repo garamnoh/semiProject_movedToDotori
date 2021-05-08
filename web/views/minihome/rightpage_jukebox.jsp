@@ -18,12 +18,12 @@
     </style>
 </head>
 <body>
-    <div class="audio-box"><p>Please Tell Me Why_íë¦¬ì¤íì¼</p><audio src="<%=request.getContextPath()%>/audio/Please Tell Me Why_íë¦¬ì¤íì¼.mp3" controls></audio></div>
-    <div class="audio-box"><p>ê³ ì¹ ê²_ì§ì</p><audio src="<%=request.getContextPath()%>/audio/ê³ ì¹ ê²_ì§ì.mp3" controls></audio></div>
-    <div class="audio-box"><p>ê·¸ë°ì¼ì_íìë¹</p><audio src="<%=request.getContextPath()%>/audio/ê·¸ë°ì¼ì_íìë¹.mp3" controls></audio></div>
-    <div class="audio-box"><p>ì íë²í¸_ì§ëì</p><audio src="<%=request.getContextPath()%>/audio/ì íë²í¸_ì§ëì.mp3" controls></audio></div>
-    <div class="audio-box"><p>í« ë¨ê±°_ìíì</p><audio src="<%=request.getContextPath()%>/audio/í« ë¨ê±°_ìíì.mp3" controls></audio></div>
-    <div class="audio-box"><p>ë²ì¨ì¼ë_ë¸ë¼ì´ ìì´ì¦</p><audio src="<%=request.getContextPath()%>/audio/ë²ì¨ì¼ë_ë¸ë¼ì´ ìì´ì¦.mp3" controls></audio></div>
-    <div class="audio-box"><p>ìê¸ì¤_IZI</p><audio src="<%=request.getContextPath()%>/audio/ìê¸ì¤_IZI.mp3" controls></audio></div>
+    <div class="audio-box"><p>Please Tell Me Why_프리스타일</p><audio src="<%=request.getContextPath()%>/audio/Please Tell Me Why_프리스타일.mp3" controls></audio></div>
+    <div class="audio-box"><p>고칠게_진원</p><audio src="<%=request.getContextPath()%>/audio/고칠게_진원.mp3" controls></audio></div>
+    <div class="audio-box"><p>그런일은_화요비</p><audio src="<%=request.getContextPath()%>/audio/그런일은_화요비.mp3" controls></audio></div>
+    <div class="audio-box"><p>전화번호_지누션</p><audio src="<%=request.getContextPath()%>/audio/전화번호_지누션.mp3" controls></audio></div>
+    <div class="audio-box"><p>핫 뜨거_원타임</p><audio src="<%=request.getContextPath()%>/audio/핫 뜨거_원타임.mp3" controls></audio></div>
+    <div class="audio-box"><p>벌써일년_브라운 아이즈</p><audio src="<%=request.getContextPath()%>/audio/벌써일년_브라운 아이즈.mp3" controls></audio></div>
+    <div class="audio-box"><p>응급실_IZI</p><audio src="<%=request.getContextPath()%>/audio/응급실_IZI.mp3" controls></audio></div>
 </body>
 </html>

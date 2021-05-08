@@ -1,6 +1,6 @@
 .container{
     box-sizing:border-box;
-    background-image:url("../resources/img/backgroundImg.png");
+    background-image:url("../images/backgroundImg.png");
     /* 아래와 같이 해주면 투명한 border에서 배경 이미지가 반복되어서 어색해지는 것을 막을 수 있다*/
     /* background-clip:padding-box; */
     /* 아래와 같은 해법도 있다. 사실 이 해법이 더 정공법이라고 할 수 있다 */

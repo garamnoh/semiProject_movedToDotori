@@ -15,11 +15,11 @@
 <body>
     <div class="menuOption">
         <div id="optionTitle">Friend</div>
-        <div class="menuTitle" id="option1">ì¼ì´</div>
+        <div class="menuTitle" id="option1">일촌</div>
         <div class="menuSub">
-            <p id="option1">ì¼ì´ê´ë¦¬</p>
-            <p id="option2">ì¹êµ¬ì°¾ê¸°</p>
-            <p id="option3">ê·¸ë£¹ê´ë¦¬</p> 
+            <p id="option1">일촌관리</p>
+            <p id="option2">친구찾기</p>
+            <p id="option3">그룹관리</p> 
         </div>
         <div class="menuTitle" id="option1">menu</div>
         <div class="menuSub">

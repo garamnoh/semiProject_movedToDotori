@@ -7,11 +7,11 @@ $("nav.miniMenu li").on("click",(e)=>{
         $("iframe.right-page-frame").attr("src",rightpageUrl);
     }
     switch(menu){
-        case "í":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_home.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_home.jsp");break;
-        case "ë¤ì´ì´ë¦¬":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_diary.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_diary.jsp");break;
-        case "ì¥¬í¬ë°ì¤":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_jukebox.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_jukebox.jsp");break;
-        case "ì¬ì§ì²©":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_album.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_album.jsp");break;
-        case "ë°©ëªë¡":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_board.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_board.jsp");
+        case "홈":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_home.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_home.jsp");break;
+        case "다이어리":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_diary.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_diary.jsp");break;
+        case "쥬크박스":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_jukebox.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_jukebox.jsp");break;
+        case "사진첩":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_album.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_album.jsp");break;
+        case "방명록":frameChange("<%=request.getContextPath()%>/views/minihome/leftpage_board.jsp","<%=request.getContextPath()%>/views/minihome/rightpage_board.jsp");
     }
     $(e.target).parent().children().css("background-color","skyblue");
     $(e.target).css("background-color","powderblue");
