@@ -1,0 +1,39 @@
+body{
+    font-family: 'Roboto', 'Noto Sans KR';
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body>.profile{
+    height: 280px;
+    width: 280px;
+    background-color: rgb(190, 190, 190);
+    margin: 10px 10px 0 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body>.profile>img{
+    height: 280px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+body>.info{
+    margin: 0 10px 0 10px;
+}
+
+body>.info>div{
+    border-radius: 3px;
+    padding: 8px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(94, 94, 94);
+    background-color: rgb(190, 190, 190);
+    margin: 10px 0 10px 0;
+}
+

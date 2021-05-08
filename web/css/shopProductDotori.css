@@ -1,0 +1,32 @@
+div.productDotori>img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 10px;
+
+}
+/* ?원들 */
+div.productDotori>p{
+    position: relative;
+    left: 60px;
+}
+/* 전체움직임 */
+div.productDotori{
+    display: inline-block;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+/* 체크박스들크기조정 */
+div.productDotori>.shopDotoriCheck{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    left: 20px;
+    border: solid 1px black;
+}
+/* 도토리 몇개 위치조정 */
+div.productDotori>.DotoriCheck{
+    position: relative;
+    left: 20px;
+}

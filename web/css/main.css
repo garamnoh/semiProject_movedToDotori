@@ -1,0 +1,135 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Noto Sans KR';
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: cornflowerblue; */
+    position: relative;
+}
+
+.bar{
+    width: 1200px;
+    height: auto;
+    background-color: rgb(224, 224, 224);
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgb(190, 190, 190) 1px solid;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.bar>img{
+    height: 30px;
+} 
+
+.bar>img:first-child{
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.bar>img:nth-child(2),
+.bar>img:nth-child(3),
+.bar>img:nth-child(4),
+.bar>img:nth-child(5){
+    margin: 0 30px 0 30px;
+}
+
+.bar>img:nth-child(5){
+    height: 20px;
+    margin-top: 6px;
+}
+
+.bar>img:nth-child(2):hover,
+.bar>img:nth-child(3):hover,
+.bar>img:nth-child(4):hover,
+.bar>img:nth-child(5):hover{
+    opacity: 0.7;
+}
+
+.bar>img:nth-child(2):active,
+.bar>img:nth-child(3):active,
+.bar>img:nth-child(4):active,
+.bar>img:nth-child(5):active{
+    opacity: 1  ;
+}
+
+.bar>iframe{
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: 15px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    opacity: 0.3;
+}
+
+.bar>img:last-child{
+    margin-left: auto;
+    margin-right: 15px;
+    opacity: 0;
+}
+
+.bar>.focused{
+    opacity: 0.5;
+}
+
+.mainContainer{
+    width: 1200px;
+    height: 100%;
+    flex-grow: 1;
+    /* border: 1px red solid; */
+    display: flex;
+    position: fixed;
+    top: 50px;
+}
+
+.mainContainer>.sidemenu{
+    width: 300px;
+    height: 100%;
+    background-color: rgb(224, 224, 224);
+    /* border-top: rgb(190, 190, 190) 1px solid; */
+    position: fixed;
+    top: 50px;
+    z-index: 1;  
+}
+
+.mainContainer>.sidemenu>iframe{
+    width: 300px;
+    height: auto;
+}
+
+.mainContainer>.contents{
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+.contents>iframe:first-child{
+    height: 0;
+    width: 0;
+}
+
+.contents>iframe:last-child{
+    background-color:white;
+    width:100%;
+    height:100%;
+}
+

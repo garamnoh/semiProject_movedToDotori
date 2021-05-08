@@ -1,0 +1,18 @@
+
+div#searchShop>img{
+    background-color: rgb(190, 190, 190);
+    height: 24px;
+    width: 24px;
+    position: relative;
+    /* margin-top:20px ; */
+    top: 10px;
+    left: 3px;
+    border-radius: 3px;
+    border :rgb(190, 190, 190) solid ;
+}
+div#searchShop>#searchTap{
+    width: 200px;
+    height: 19px;
+    border: rgb(190, 190, 190) solid;
+}
+

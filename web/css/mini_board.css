@@ -1,0 +1,119 @@
+/*********right_board**********/
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+#geust_box{
+    height:180px;
+    width:520px;
+    margin-bottom: 20px;
+    margin-left:5px;
+    background-color: white;
+    border: 1px solid;
+}
+#guest_info{
+    /* display: inline-block; */
+    height:25px;
+    width:520px;
+    background-color: rgba(117, 122, 126, 0.3);
+    border: 1px solid;
+}
+#guest_no{
+    display: inline-block;
+    height:25px;
+    width:30px;
+    margin-left: 15px;
+    border:1px solid red;
+}
+#guest_name{
+    display: inline-block;
+    height:25px;
+    width:55px;
+    margin-left: 8px;
+    border:1px solid red;
+}
+#guest_date{
+    display: inline-block;
+    height:25px;
+    width:100px;
+    margin-left: 20px;
+    border:1px solid red;
+}
+#guest_inner{
+    /* display: inline-block; */
+    height:120px;
+    width:520px;
+    border: 1px solid;
+
+}
+#guest_minimi{
+    display: inline-block;
+    height:110px;
+    width:100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border:1px solid;
+}
+#guest_reply{
+    display: inline-block;
+    height:110px;
+    width:350px;
+    margin-left:20px;
+    margin-right:20px;
+    border:1px solid;
+}
+#reply{
+    width:425px;
+    margin-left:20px;
+}
+
+
+/**********right_diary***********/
+#diary_title{
+    display:inline-block;
+    height:55px;
+    width:520px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_title_date{
+    display:inline-block;
+    height:55px;
+    width:80px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_content{
+    display:inline-block;
+    height:500px;
+    width:520px;
+    border:1px solid;
+}
+#diary_date{
+    display:inline-block;
+    height:30px;
+    width:520px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_inner{
+    display:inline-block;
+    height:400px;
+    width:520px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_reply{
+    display:inline-block;
+    text-align: center;
+    height:30px;
+    width:520px;
+    background-color: white;
+    border:1px solid;
+}
+#diary_input{
+    width:300px;
+}
+
+
