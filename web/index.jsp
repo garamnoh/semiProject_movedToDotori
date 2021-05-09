@@ -16,27 +16,29 @@
     <div class="center1">
         <div id="title">
    
+            <form action="login.do" method="post">
+	            <input type="text" name="userId" id="userId" placeholder="username"required >  <label id="gol">@</label> 
+	            <input type="text" name="email" id="email"  value=""> 
+	            <select name='selectEmail' id="selectEmail">
+	                <option value="1">직접입력</option>
+	                <option value='dotori'>dotori.com</option>
+	                <option value="dreamwiz">dreamwiz.com</option> 
+	                <option value="freechal">freechal.com</option>
+	                <option value="gmail">gmail.com</option> 
+	                <option value='daum'>hanmail.net</option>
+	                <option value="korea">korea.com</option> 
+	                <option value="lycos">lycos.co.kr</option> 
+	                <option value='nate'>nate.com</option>
+	                <option value='naver'>naver.com</option>
+	                <option value='yahoo'>yahoo.co.kr</option>
+	            </select>
+	            <input type="password" name="password" id="password" placeholder="*******" required>
+	            <img src="<%=request.getContextPath()%>/images/logo_main.png" alt="">
+	            <input type="submit" name="" id="login" value="로그인">
+            </form>
             
-            <input type="text" name="userId" id="userId" placeholder="username"required >  <label id="gol">@</label> 
-            <input type="text" name="email2" id="email2"  value=""> 
-            <select name='selectEmail' id="selectEmail">
-                <option value="1">직접입력</option>
-                <option value='dotori'>dotori.com</option>
-                <option value="dreamwiz">dreamwiz.com</option> 
-                <option value="freechal">freechal.com</option>
-                <option value="gmail">gmail.com</option> 
-                <option value='daum'>hanmail.net</option>
-                <option value="korea">korea.com</option> 
-                <option value="lycos">lycos.co.kr</option> 
-                <option value='nate'>nate.com</option>
-                <option value='naver'>naver.com</option>
-                <option value='yahoo'>yahoo.co.kr</option>
-               
-    
-              </select>
-            <input type="password" name="" id="password" placeholder="*******" required>
-            <img src="../resources/img/logo_main.png" alt="">
-            <input type="submit" name="" id="login" value="로그인">
+            
+            
     
             <p><a href="/semiproject/html/idpwSearch.html">아이디 </a>/<a href="/semiproject/html/idpwSearch.html">비밀번호 찾기</a></p>
        
