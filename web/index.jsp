@@ -17,8 +17,8 @@
         <div id="title">
    
             <form action="login.do" method="post">
-	            <input type="text" name="userId" id="userId" placeholder="username"required >  <label id="gol">@</label> 
-	            <input type="text" name="email" id="email"  value=""> 
+	            <input type="text" name="localPart" id="localPart" placeholder="username"required >  <label id="gol">@</label> 
+	            <input type="text" name="domain" id="domain"  value=""> 
 	            <select name='selectEmail' id="selectEmail">
 	                <option value="1">직접입력</option>
 	                <option value='dotori'>dotori.com</option>
@@ -34,7 +34,7 @@
 	            </select>
 	            <input type="password" name="password" id="password" placeholder="*******" required>
 	            <img src="<%=request.getContextPath()%>/images/logo_main.png" alt="">
-	            <input type="submit" name="" id="login" value="로그인">
+	            <input type="submit" id="login" value="로그인">
             </form>
             
             

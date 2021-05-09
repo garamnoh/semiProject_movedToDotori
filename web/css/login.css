@@ -57,7 +57,7 @@ p{
 }
 
 /*앞에 아이디*/
-#userId{
+#localPart{
     width: 35%;
     height: 30px;
     position:relative;
@@ -65,7 +65,7 @@ p{
     top: 20px;
 }
 /*뒤에 이메일*/
-#email2{
+#domain{
     width: 45%;
     height: 30px;
     position:relative;
