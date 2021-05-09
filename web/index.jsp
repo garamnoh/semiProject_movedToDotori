@@ -7,35 +7,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOTORI</title>
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap">
-    <link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/images/favicon.ico"/>
+   <!--외부 스타일 시트-->
+  <link rel="stylesheet" href="<%=request.getContextPath()%>/css/login.css">
+ <link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/images/favicon.ico"/>
+  
 </head>
 <body>
-    <div class="main">
-        <div class="bar">
-            <img src="<%=request.getContextPath()%>/images/logo_main.png" alt="">
-            <img src="<%=request.getContextPath()%>/images/home_b.png" alt="" id='homeBtn' class='btn'>
-            <img src="<%=request.getContextPath()%>/images/group_b.png" alt="" id='groupBtn' class='btn focused'>
-            <img src="<%=request.getContextPath()%>/images/shop_b.png" alt="" id='shopBtn' class='btn focused'>
-            <img src="<%=request.getContextPath()%>/images/logo_minihome.png" alt="" id='miniBtn' class='btn focused'>
-
-            <img src="<%=request.getContextPath()%>/images/logo_main.png" alt="">
-        </div>
-        <div class="mainContainer">
-            <div class="sidemenu flex">
-                <iframe src="<%=request.getContextPath()%>/views/sidebarHome.jsp" frameborder="0">
-                </iframe>
-            </div>
-            <div class="contents">
-                <iframe src="<%=request.getContextPath()%>/views/contentHome.jsp" frameborder="0" allow='autoplay;'>
-                </iframe>
-            </div>
+    <div class="center1">
+        <div id="title">
+   
+            
+            <input type="text" name="userId" id="userId" placeholder="username"required >  <label id="gol">@</label> 
+            <input type="text" name="email2" id="email2"  value=""> 
+            <select name='selectEmail' id="selectEmail">
+                <option value="1">직접입력</option>
+                <option value='dotori'>dotori.com</option>
+                <option value="dreamwiz">dreamwiz.com</option> 
+                <option value="freechal">freechal.com</option>
+                <option value="gmail">gmail.com</option> 
+                <option value='daum'>hanmail.net</option>
+                <option value="korea">korea.com</option> 
+                <option value="lycos">lycos.co.kr</option> 
+                <option value='nate'>nate.com</option>
+                <option value='naver'>naver.com</option>
+                <option value='yahoo'>yahoo.co.kr</option>
+               
+    
+              </select>
+            <input type="password" name="" id="password" placeholder="*******" required>
+            <img src="../resources/img/logo_main.png" alt="">
+            <input type="submit" name="" id="login" value="로그인">
+    
+            <p><a href="/semiproject/html/idpwSearch.html">아이디 </a>/<a href="/semiproject/html/idpwSearch.html">비밀번호 찾기</a></p>
+       
+            <hr>
+            <button id="new"onClick="location.href='SignUp.html'">새 계정 만들기</button>
+        
+       
         </div>
     </div>
-    <script src='<%=request.getContextPath()%>/js/jquery-3.6.0.min.js'></script>
-    <script src="<%=request.getContextPath()%>/js/main.js"></script>
+     <!-- 외부 js파일 -->
+     <script src='<%=request.getContextPath()%>/js/jquery-3.6.0.min.js'></script>
+     <script src='<%=request.getContextPath()%>/js/main.js'></script>
+     <script>
+                        $('#selectEmail').change(function(){
+        $("#selectEmail option:selected").each(function () {
+                
+                if($(this).val()== '1'){ //직접입력일 경우
+                    $("#email2").val('');                        //값 초기화
+                    $("#email2").attr("disabled",false); //활성화
+                }else{ //직접입력이 아닐경우
+                    $("#email2").val($(this).text());      //선택값 입력
+                    $("#email2").attr("disabled",true); //비활성화
+                }
+            });
+        });
+     </script>
 </body>
 </html>
