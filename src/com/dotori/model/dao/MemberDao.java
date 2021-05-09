@@ -17,7 +17,7 @@ public class MemberDao {
 	private Properties prop=new Properties();
 	
 	{
-		String path=MemberDao.class.getResource("resources/sql/member_sql.properties").getPath();
+		String path=MemberDao.class.getResource("/sql/member_sql.properties").getPath();
 		try{
 			prop.load(new FileReader(path));
 		}catch(FileNotFoundException e) {

@@ -28,6 +28,7 @@ public class LoginServlet extends HttpServlet {
 		String userId=localPart+"@"+domain;
 		String password=request.getParameter("password");
 		Member m=service.login(userId,password);
+		System.out.println(m);
 		if(m!=null) {
 			session.setAttribute("member",m);
 			response.sendRedirect(request.getContextPath()+"/views/main.jsp");
@@ -35,7 +36,6 @@ public class LoginServlet extends HttpServlet {
 			response.sendRedirect(request.getContextPath());
 		}
 	}
-
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
